@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Movie Ticket Booking</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>🎬 Movie Ticket Booking</h1>
+
+        <!-- Movie -->
+        <div class="section">
+            <label for="movieSelect">🎥 Select Movie</label>
+
+            <select id="movieSelect">
+                <option value="">Select a movie</option>
+            </select>
+        </div>
+
+
+        <!-- Show -->
+        <div class="section">
+            <label for="showSelect">🕐 Select Show</label>
+
+            <select id="showSelect">
+                <option value="">Select a show</option>
+            </select>
+        </div>
+
+
+        <!-- Seat Information -->
+        <div class="seat-info">
+
+            <div>
+                <span>Total</span>
+                <strong id="totalSeats">0</strong>
+            </div>
+
+            <div>
+                <span>Booked</span>
+                <strong id="bookedSeats">0</strong>
+            </div>
+
+            <div>
+                <span>Available</span>
+                <strong id="availableSeats">0</strong>
+            </div>
+
+        </div>
+
+
+        <!-- Screen -->
+        <div class="screen">
+            SCREEN
+        </div>
+
+
+        <!-- Seats -->
+        <div class="section">
+
+            <h2>Select Your Seat</h2>
+
+            <div class="legend">
+
+                <span>
+                    <span class="legend-box available-box"></span>
+                    Available
+                </span>
+
+                <span>
+                    <span class="legend-box booked-box"></span>
+                    Booked
+                </span>
+
+                <span>
+                    <span class="legend-box selected-box"></span>
+                    Selected
+                </span>
+
+            </div>
+
+
+            <div id="seatContainer" class="seat-container">
+
+                <p>Select a show to view seats.</p>
+
+            </div>
+
+        </div>
+
+
+        <!-- Customer -->
+        <div class="section">
+
+            <label for="customerName">
+                👤 Customer Name
+            </label>
+
+            <input
+                type="text"
+                id="customerName"
+                placeholder="Enter your name"
+            >
+
+            <button id="bookButton">
+                🎟️ Book Ticket
+            </button>
+
+        </div>
+
+
+        <!-- Message -->
+        <div id="message"></div>
+
+    </div>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
